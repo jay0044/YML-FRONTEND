@@ -79,17 +79,13 @@ const AllCategories = () => {
                   <button
                     title="Edit Role"
                     className="p-2 bg-green-100 hover:bg-green-500 hover:text-white text-green-600 rounded-full transition"
-                    onClick={() => {
-                      setUpdateUserDetails(el);
-                      setOpenUpdateRole(true);
-                    }}
+
                   >
                     <MdModeEdit size={18} />
                   </button>
                   <button
                     title="Delete User"
                     className="p-2 bg-red-100 hover:bg-red-500 hover:text-white text-red-600 rounded-full transition"
-                    onClick={() => deleteUser(el._id)}
                   >
                     <MdDelete size={18} />
                   </button>
