@@ -5,6 +5,7 @@ import addToCart from "../helpers/addToCart";
 import Context from "../context/index";
 import { useCart } from "../context/CartContext";
 import toast from "react-hot-toast";
+import SummaryApi from "../common";
 
 const VerticalCard = ({ loading, data = [] }) => {
   const loadingList = new Array(13).fill(null);
