@@ -209,7 +209,6 @@ const Profile = () => {
   };
   const handledelete = () => {
     navigate("/request-for-delete-account");
-    1;
   };
   useEffect(() => {
     const fetchUserData = async (authToken) => {
