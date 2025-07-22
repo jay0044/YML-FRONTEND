@@ -24,7 +24,7 @@ const BannerProduct = () => {
   }, []);
 
   return (
-    <div className="relative mx-auto mt-4 sm:mt-10 rounded-lg w-full max-w-screen-xl overflow-hidden h-full">
+    <div className="relative mx-auto mt-4 sm:mt-6 rounded-lg w-full max-w-screen-xl overflow-hidden h-full shadow-md">
       <div className="relative">
         {/* Render the first banner image only */}
         {bannerImages.length > 0 && (

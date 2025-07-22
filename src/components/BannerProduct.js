@@ -45,8 +45,8 @@ const BannerProduct = () => {
                 slidesPerView={3}
                 spaceBetween={20}
                 loop={true}
-                pagination={{ clickable: true }}
-                autoplay={{ delay: 3000, disableOnInteraction: false }} // Adjust delay as needed
+                pagination={false}
+                autoplay={{ delay: 2000, disableOnInteraction: false }} // Adjust delay as needed
                 modules={[Pagination, Autoplay]}
                 className="h-full w-full"
                 effect="coverflow"
