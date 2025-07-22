@@ -29,7 +29,6 @@ function App() {
               }}
             />
             {!isAdminLogin && (isSellerPanel ? <SellerHeader /> : <Header />)}
-
             <main
               className={`${
                 isAdminLogin

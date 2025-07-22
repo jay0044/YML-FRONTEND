@@ -16,6 +16,7 @@ import PersonalCare from "../assest/CategoryImgs/Personal Care.png";
 import HomeDecor from "../assest/CategoryImgs/Home Decor.png";
 import Footer from "../components/Footer";
 import SaleHighlight from "../components/SaleHighlight";
+import CardPageNew from "../components/CardsNew";
 
 const Home = () => {
   return (
@@ -31,6 +32,7 @@ const Home = () => {
         >
           <AdBanner />
         </Link>
+        <CardPageNew />
         <GroceryCart
           category={"groceries"}
           heading={"Top Picks in Groceries"}

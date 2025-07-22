@@ -216,7 +216,7 @@ const Footer = () => {
         </div>
 
         {/* Social Links & Copyright */}
-        <div className="bg-gray-800 text-gray-400 py-2">
+        <div className="bg-gray-800 text-gray-600 py-2">
           <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
             <p className="text-center md:text-left font-semibold">
               &copy; 2024 | Yahshua Marketing Limited.
@@ -248,10 +248,10 @@ const Footer = () => {
               </a>
             </div>
             <div className="flex gap-3 justify-center md:justify-end mt-2 md:mt-0">
-              <a href="#" className="hover:text-white font-semibold">
+              <a href="/" className="hover:text-white font-semibold">
                 Terms and Conditions
               </a>
-              <a href="#" className="hover:text-white font-semibold">
+              <a href="/" className="hover:text-white font-semibold">
                 Privacy Policy
               </a>
             </div>

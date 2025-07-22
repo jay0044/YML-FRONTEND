@@ -68,14 +68,13 @@ export const CartProvider = ({ children }) => {
   };
 
   const cartProductCount = useMemo(() => {
-  if (authToken) {
-    return cart.reduce((total, item) => total + (item.quantity || 1), 0);
-  } else {
-    const guestCart = JSON.parse(localStorage.getItem("guestCart") || "[]");
-    return guestCart.reduce((acc, item) => acc + item.quantity, 0);
-  }
-}, [cart, authToken]);
-
+    if (authToken) {
+      return cart.reduce((total, item) => total + (item.quantity || 1), 0);
+    } else {
+      const guestCart = JSON.parse(localStorage.getItem("guestCart") || "[]");
+      return guestCart.reduce((acc, item) => acc + item.quantity, 0);
+    }
+  }, [cart, authToken]);
 
   return (
     <CartContext.Provider

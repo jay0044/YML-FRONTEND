@@ -83,10 +83,6 @@
 
 // export const useUser = () => useContext(UserContext);
 
-
-
-
-
 // import React, { createContext, useContext, useEffect, useState } from "react";
 // import SummaryApi from "../common";
 // import { useDispatch } from "react-redux";
@@ -202,9 +198,6 @@
 
 // export const useUser = () => useContext(UserContext);
 
-
-
-
 import React, { createContext, useContext, useEffect, useState } from "react";
 import SummaryApi from "../common";
 import { useDispatch } from "react-redux";
@@ -214,13 +207,11 @@ const UserContext = createContext();
 
 export const UserProvider = ({ children }) => {
   const dispatch = useDispatch();
-
   const [user, setUser] = useState(null); // ✅ In-memory only, not localStorage
   const [authToken, setAuthToken] = useState(
     () => localStorage.getItem("authToken") || null
   );
   const [loading, setLoading] = useState(true);
-
   const fetchUserDetails = async (token = authToken) => {
     if (!token) {
       console.warn("⚠️ No auth token available");
