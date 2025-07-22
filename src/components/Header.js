@@ -252,11 +252,12 @@ const Header = () => {
             <>
               <Link
                 to="/login"
-                className="inline-flex items-center gap-2 px-5 py-1 md:py-2 text-md font-bold text-sky-600 bg-white rounded-md hover:bg-sky-700 hover:text-white transition-colors duration-200"
+                className="inline-flex items-center gap-2 px-4 py-1 text-md font-bold bg-white text-sky-600 rounded-md hover:bg-sky-700 hover:text-white transition-colors duration-200"
               >
-                <BiSolidLogInCircle className="text-2xl" />
-                LOGIN
+                <BiSolidLogInCircle className="text-xl sm:text-2xl text-inherit" />
+                <span className="hidden sm:inline">LOGIN</span>
               </Link>
+
               {/* <Link
                 to="/otp-login"
                 className="inline-flex items-center gap-2 px-5 py-1 md:py-2 text-md font-bold text-sky-600 bg-white rounded-md hover:bg-sky-700 hover:text-white transition-colors duration-200"

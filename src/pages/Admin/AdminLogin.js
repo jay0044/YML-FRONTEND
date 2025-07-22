@@ -52,7 +52,7 @@ const AdminLogin = () => {
         const token = result.data;
         saveAuthToken(token);
         toast.success("Admin login successful");
-        navigate("/admin-panel"); // Redirect to admin dashboard
+        navigate("/"); // Redirect to admin dashboard
       } else {
         toast.error(result.message || "Login failed");
       }
